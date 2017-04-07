@@ -1,0 +1,34 @@
+section {
+    margin: 0;
+}
+
+body {
+    padding: 0;
+}
+
+#fineprint {
+    margin-top: 4em;
+}
+
+#pagearea {
+  width: 700px;
+  margin-left: 7em;
+}
+
+#footerbreak {
+  clear: both;
+}
+
+img.bigthumb {
+    margin-right: 2em;
+}
+
+.downloads {
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.downloads h3 {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,178 @@
+/*
+Theme Name: blank
+Theme URI: http://example.com/
+Author: John Kawakami
+Author URI: http://riceball.com/
+Description: I'm a blank starter theme for porting HTML sites over to WordPress.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: blank
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+
+This blank starter theme is based on _s (underscores).
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+    background-color: #d44413;
+    background-image: linear-gradient(to bottom, #ce4213, #dd4814);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+    padding-inline-start: 40px;
+}
+
+.main-navigation li {
+	float: left;
+	position: relative;
+    line-height: 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+.main-navigation>div>ul>li:first-child {
+    font-size: 130%;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px;
+}
+.main-navigation a:hover {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-image: none;
+}
+
+.main-navigation ul ul {
+    border-radius: 5px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 40px;
+	left: -999em;
+	z-index: 99999;
+    padding-inline-start: 0px;
+    background-color: white;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+    color: #d44413;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.main-navigation ul ul li {
+
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+}
+
+.main-navigation ul ul :hover > a,
+.main-navigation ul ul .focus > a {
+}
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a.focus {
+    background-color: #d44413 !important;
+    color: white;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	left: 100%;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a,
+.main-navigation .current-menu-ancestor > a {
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
