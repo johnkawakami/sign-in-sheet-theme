@@ -9,14 +9,15 @@
  * @package _s
  */
 
+$THEMEURL = get_template_directory_uri();
 ?><!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="/wp-content/themes/blank-theme/css/bootstrap.min.css" rel="stylesheet" />
-<link href="/wp-content/themes/blank-theme/css/bootswatch.css" rel="stylesheet" />
-<link href="/wp-content/themes/blank-theme/css/main.css" rel="stylesheet" />
-<link href="/wp-content/themes/blank-theme/style.css" rel="stylesheet" />
+<link href="<?php echo $THEMEURL ?>/css/bootstrap.min.css" rel="stylesheet" />
+<link href="<?php echo $THEMEURL ?>/css/bootswatch.css" rel="stylesheet" />
+<link href="<?php echo $THEMEURL ?>/css/main.css" rel="stylesheet" />
+<link href="<?php echo $THEMEURL ?>/style.css" rel="stylesheet" />
 <title>Sign-in Sheet</title>
 <meta name="description" content="A free repository of common paper sign-in sheets and business forms for your company, organization, church, faith organization, or club to print." />
 <meta name="keywords" content="paper, printed, free, sign-in sheet, business forms, openoffice, open office, libre office, pdf" />
