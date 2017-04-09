@@ -38,8 +38,8 @@ $THEMEURL = get_template_directory_uri();
   <div class="row">
 
     <div class="span6">
-      <h1>Sign-in Sheet</h1>
-      <p class="lead">Free sign-in sheets and business templates.  <br />In OpenOffice / Libre Office format.</p>
+        <h1><?php bloginfo('name'); ?></h1>
+        <p class="lead"><?php bloginfo('description') ?></p>
     </div>
 
   </div>
