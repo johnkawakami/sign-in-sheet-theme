@@ -145,6 +145,17 @@ This blank starter theme is based on _s (underscores).
 .main-navigation.toggled ul {
 	display: block;
 }
+.menu-toggle {
+    background-color: #d44413;
+    border: none;
+    color: white;
+    font-size: 22px;
+    height: 32px;
+    margin: 10px 20px 20px;
+}
+.menu-toggle {
+
+}
 
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {

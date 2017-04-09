@@ -26,7 +26,7 @@ $THEMEURL = get_template_directory_uri();
 </head>
 <body>
 <nav id="site-navigation" class="main-navigation" role="navigation">
-    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', '_s' ); ?></button>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">&#9776;</button>
     <?php wp_nav_menu( array( 'theme_location' => 'menu-1', 'menu_id' => 'primary-menu' ) ); ?>
 </nav><!-- #site-navigation -->
 
