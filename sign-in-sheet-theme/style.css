@@ -76,7 +76,7 @@ This blank starter theme is based on _s (underscores).
 	display: block;
 	text-decoration: none;
     color: white;
-    padding: 10px 15px 10px;
+    padding: 10px 15px 10px 10px;
 }
 .main-navigation a:hover {
     background-color: rgba(0, 0, 0, 0.3) !important;
@@ -107,7 +107,6 @@ This blank starter theme is based on _s (underscores).
 }
 
 .main-navigation ul ul li {
-
 }
 
 .main-navigation li:hover > a,
@@ -143,6 +142,7 @@ This blank starter theme is based on _s (underscores).
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
+    padding-inline-start: 0px;
 	display: block;
 }
 .menu-toggle {
@@ -153,8 +153,29 @@ This blank starter theme is based on _s (underscores).
     height: 32px;
     margin: 10px 20px 20px;
 }
-.menu-toggle {
-
+.main-navigation.toggled ul li:first-child {
+    display: none;
+}
+.main-navigation.toggled ul li {
+    display: block;
+    float: none;
+}
+.main-navigation.toggled ul ul {
+    display: block;
+    left: auto;
+    position: relative;
+    top: 0;
+    width: 90%;
+    margin-bottom: 15px;
+    margin-left: 2%;
+}
+.main-navigation.toggled ul ul li {
+    display: block;
+    float: left;
+    padding: 0;
+}
+.main-navigation.toggled ul ul li a {
+    width: 100%;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -164,6 +185,11 @@ This blank starter theme is based on _s (underscores).
 	.main-navigation ul {
 		display: block;
 	}
+}
+@media screen and (max-width: 37.5em) {
+    #pagearea {
+        margin-left: 1em;
+    }
 }
 
 .site-main .comment-navigation,
