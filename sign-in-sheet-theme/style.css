@@ -38,27 +38,36 @@ This blank starter theme is based on _s (underscores).
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Elements
+--------------------------------------------------------------*/
+body {
+    text-align: center;
+}
+div {
+    text-align: left;
+}
 
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
     background-color: #d44413;
     background-image: linear-gradient(to bottom, #ce4213, #dd4814);
+	clear: both;
     color: white;
-    margin-bottom: 20px;
+	display: block;
+    margin: 0 auto 20px auto;
+	width: 100%;
+    float: left;
 }
 
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
+    max-width: 700px;
 	padding: 0;
-    padding-inline-start: 40px;
 }
 
 .main-navigation li {
@@ -178,7 +187,7 @@ This blank starter theme is based on _s (underscores).
     width: 100%;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 700px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -212,4 +221,65 @@ This blank starter theme is based on _s (underscores).
 	float: right;
 	text-align: right;
 	width: 50%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+.archive-description {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+h5.blog-description {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#pagearea {
+    width: 90%;
+    margin: 0 auto 0 1em;
+    transition: margin 0.25s;
+}
+@media screen and (min-width: 700px) {
+    #pagearea {
+        margin: 0 auto 0 100px;
+        max-width: 700px;
+    }
+}
+@media screen and (min-width: 900px) {
+    #pagearea {
+        margin: 0 auto;
+    }
+}
+
+.span6 {
+    width: 100%;
+}
+.subhead h1 {
+    font-size: 40px;
+    line-height: auto;
+    transition: font-size 0.5s;
+}
+@media screen and (min-width: 460px) {
+    .span6 {
+        width: 460px;
+    }
+    .subhead h1 {
+        font-size: 54px;
+        line-height: auto;
+    }
+}
+
+#bigad {
+    width: 336px;
+    height: 280px;
+    border: 1px solid blue;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 850px) {
+    #bigad {
+        float: right;
+        margin-bottom: 0;
+    }
 }

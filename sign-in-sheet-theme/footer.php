@@ -12,7 +12,7 @@
 ?>
     <div id="footerbreak" style="height:20pt"></div>
 
-    <div id="bigad" class="" style="float: right; width: 336px; height:280px;">
+    <div id="bigad">
         <script type="text/javascript"><!--
         google_ad_client = "ca-pub-0545194040495488";
         /* large rectangle for sign-in-sheet */

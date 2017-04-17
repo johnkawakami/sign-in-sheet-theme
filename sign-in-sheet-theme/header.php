@@ -18,10 +18,8 @@ $THEMEURL = get_template_directory_uri();
 <link href="<?php echo $THEMEURL ?>/css/bootswatch.css" rel="stylesheet" />
 <link href="<?php echo $THEMEURL ?>/css/main.css" rel="stylesheet" />
 <link href="<?php echo $THEMEURL ?>/style.css" rel="stylesheet" />
-<title>Sign-in Sheet</title>
-<meta name="description" content="A free repository of common paper sign-in sheets and business forms for your company, organization, church, faith organization, or club to print." />
-<meta name="keywords" content="paper, printed, free, sign-in sheet, business forms, openoffice, open office, libre office, pdf" />
-<meta name="geo.placename" content="Los Angeles, California" />
+<title><?php bloginfo('name'); ?></title>
+<meta name="description" content="<?php bloginfo('description'); ?>" />
 <?php wp_head(); ?>
 </head>
 <body>
@@ -38,8 +36,13 @@ $THEMEURL = get_template_directory_uri();
   <div class="row">
 
     <div class="span6">
-        <h1><?php bloginfo('name'); ?></h1>
-        <p class="lead"><?php bloginfo('description') ?></p>
+        <?php if (is_front_page()): ?>
+            <h1><?php bloginfo('name'); ?></h1>
+            <h2 class="lead"><?php bloginfo('description') ?></h2>
+        <?php else: ?>
+            <h4><?php bloginfo('name'); ?></h4>
+            <h5 class="blog-description"><?php bloginfo('description') ?></h5>
+        <?php endif; ?>
     </div>
 
   </div>
