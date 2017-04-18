@@ -274,7 +274,6 @@ h5.blog-description {
 #bigad {
     width: 336px;
     height: 280px;
-    border: 1px solid blue;
     margin-bottom: 20px;
 }
 @media screen and (min-width: 850px) {
