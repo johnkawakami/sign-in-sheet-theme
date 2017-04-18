@@ -57,6 +57,7 @@ if(function_exists("register_field_group"))
 				'type' => 'file',
 				'save_format' => 'url',
 				'library' => 'uploadedTo',
+                'mime_types' => 'odt',
 			),
 			array (
 				'key' => 'field_58e6c5695ac3f',
@@ -65,6 +66,7 @@ if(function_exists("register_field_group"))
 				'type' => 'file',
 				'save_format' => 'url',
 				'library' => 'uploadedTo',
+                'mime_types' => 'doc',
 			),
 			array (
 				'key' => 'field_58e6c53b5ac3e',
@@ -73,6 +75,7 @@ if(function_exists("register_field_group"))
 				'type' => 'file',
 				'save_format' => 'url',
 				'library' => 'uploadedTo',
+                'mime_types' => 'ods',
 			),
 			array (
 				'key' => 'field_58e6c5855ac40',
@@ -81,6 +84,7 @@ if(function_exists("register_field_group"))
 				'type' => 'file',
 				'save_format' => 'url',
 				'library' => 'uploadedTo',
+                'mime_types' => 'xls',
 			),
 		),
 		'location' => array (
@@ -104,3 +108,9 @@ if(function_exists("register_field_group"))
 	));
 }
 
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+ $existing_mimes['ods'] = 'application/vnd.oasis.opendocument.spreadsheet';
+ $existing_mimes['odp'] = 'application/vnd.oasis.opendocument.presentation';
+ return $existing_mimes;
+}
