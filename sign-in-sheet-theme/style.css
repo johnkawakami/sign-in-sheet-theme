@@ -1,14 +1,14 @@
 /*
 Theme Name: SignInSheet
-Theme URI: http://example.com/
-Author: John Kawakami
+Theme URI: http://riceball.com/themes/
+Author: johnkawakami
 Author URI: http://riceball.com/
-Description: Practice themeing for sis.
-Version: 1.1.0
+Description: Sign In Sheet Website Theme
+Version: 1.1.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: blank
-Tags:
+Text Domain: rb_sis
+Tags: one-column
 
 This theme, like WordPress, is licensed under the GPL.
 
@@ -43,9 +43,14 @@ This blank starter theme is based on _s (underscores).
 --------------------------------------------------------------*/
 body {
     text-align: center;
+    font-size: 16px;
+    line-height: 24px;
 }
 div {
     text-align: left;
+}
+h3 {
+    line-height: 34px;
 }
 
 /*--------------------------------------------------------------

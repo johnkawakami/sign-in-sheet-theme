@@ -13,13 +13,18 @@ $THEMEURL = get_template_directory_uri();
 ?><!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link href="<?php echo $THEMEURL ?>/css/bootstrap.min.css" rel="stylesheet" />
-<link href="<?php echo $THEMEURL ?>/css/bootswatch.css" rel="stylesheet" />
-<link href="<?php echo $THEMEURL ?>/css/main.css" rel="stylesheet" />
-<link href="<?php echo $THEMEURL ?>/style.css" rel="stylesheet" />
-<title><?php bloginfo('name'); ?></title>
-<meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="msvalidate.01" content="5296E0A6459E2EAAA42442F1C14D804A" />
+    <link href="<?php echo $THEMEURL ?>/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?php echo $THEMEURL ?>/css/bootswatch.css" rel="stylesheet" />
+    <link href="<?php echo $THEMEURL ?>/css/main.css" rel="stylesheet" />
+    <link href="<?php echo $THEMEURL ?>/style.css" rel="stylesheet" />
+    <title><?php bloginfo('name'); ?></title>
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
 <?php wp_head(); ?>
 </head>
 <body>
