@@ -110,11 +110,11 @@ if(function_exists("register_field_group"))
 
 add_filter('upload_mimes', 'custom_upload_mimes');
 function custom_upload_mimes ( $existing_mimes=array() ) {
- $existing_mimes['ods'] = 'application/vnd.oasis.opendocument.spreadsheet';
- $existing_mimes['odp'] = 'application/vnd.oasis.opendocument.presentation';
- $existing_mimes['xls'] = 'application/vnd.ms-excel';
- $existing_mimes['xlsx'] = 'application/vnd.ms-excel';
- $existing_mimes['doc'] = 'application/vnd.ms-word';
- $existing_mimes['docx'] = 'application/vnd.ms-word';
- return $existing_mimes;
+    $existing_mimes['ods'] = 'application/vnd.oasis.opendocument.spreadsheet';
+    $existing_mimes['odp'] = 'application/vnd.oasis.opendocument.presentation';
+    $existing_mimes['xls'] = 'application/vnd.ms-excel';
+    $existing_mimes['xlsx'] = 'application/vnd.ms-excel';
+    $existing_mimes['doc'] = 'application/vnd.ms-word';
+    $existing_mimes['docx'] = 'application/vnd.ms-word';
+    return $existing_mimes;
 }
