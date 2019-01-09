@@ -24,7 +24,10 @@ $THEMEURL = get_template_directory_uri();
     <link href="<?php echo $THEMEURL ?>/css/main.css" rel="stylesheet" />
     <link href="<?php echo $THEMEURL ?>/style.css" rel="stylesheet" />
     <title><?php bloginfo('name'); ?></title>
-    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <?php  // skip if Yoast is loaded
+    if (!defined('WPSEO_VERSION')) { ?>
+        <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <?php } ?>
 <?php wp_head(); ?>
 </head>
 <body>
